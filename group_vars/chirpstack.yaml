@@ -35,6 +35,10 @@ iptables:
       port: 8080
       source: 0.0.0.0/0
       protocol: tcp
+    - ## TO DO - A termes, grafana servit sur le port 80 'sudo setcap 'cap_net_bind_service=+ep' /usr/sbin/grafana-server' ce qui permettra d'y acceder sans taper le port et chirpstack sur le port 8090
+      port: 3000
+      source: 0.0.0.0/0
+      protocol: tcp
 
 # Mosquitto configuration (MQTT)
 mosquitto:
