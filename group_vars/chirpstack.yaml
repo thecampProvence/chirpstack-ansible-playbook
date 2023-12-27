@@ -39,6 +39,10 @@ iptables:
       port: 3000
       source: 0.0.0.0/0
       protocol: tcp
+    - 
+      port: 1194
+      source: 0.0.0.0/0
+      protocol: udp
 
 # Mosquitto configuration (MQTT)
 mosquitto:
